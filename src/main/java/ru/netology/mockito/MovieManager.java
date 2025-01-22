@@ -2,7 +2,6 @@ package ru.netology.mockito;
 
 public class MovieManager {
 
-    //    private String[] movies = new String[0];
     private Movie[] movies = new Movie[0];
     private int limit;
 
@@ -25,11 +24,12 @@ public class MovieManager {
     }
 
     //    выводит список всех фильмов
-    public Movie[] finfAll() {
+    public Movie[] findAll() {
 
         return movies;
     }
 
+//    возвращает массив из последних добавленных позиций в обратном порядке
     public Movie[] getLastMovies() {
         int resultLength = Math.min(movies.length, limit);
         Movie[] result = new Movie[resultLength];
